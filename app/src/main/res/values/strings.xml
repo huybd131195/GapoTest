@@ -2,4 +2,16 @@
     <string name="app_name">GapoTest</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_gapo">Logo Gapo</string>
+    <string name="menu">menu</string>
+    <string name="search">search</string>
+    <string name="what_do_you_want_to_share">Bạn muốn chia sẻ điều gì?</string>
+    <string name="live_stream">Live Stream</string>
+    <string name="nh_video">Ảnh/Video</string>
+    <string name="b_nh_ch_n">Bình chọn</string>
+    <string name="user_name">Nguyễn Quang Khôi</string>
+    <string name="todo">TODO</string>
+    <string name="avatar_user">avatar user</string>
+    <string name="_1_ph_t_tr_c">1 phút trước</string>
+    <string name="lorem">Ta thường nghe: Kỷ Tín đem mình chết thay, cứu thoát cho Cao Đế; Do Vu chìa lưng chịu giáo, che chở cho Chiêu Vương; Dự Nhượng nuốt than, báo thù cho chủ; Thân Khoái chặt tay để cứu nạn cho nước...Xem thêm</string>
 </resources>

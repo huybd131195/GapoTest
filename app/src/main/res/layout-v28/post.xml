@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/imgUserPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dps12"
+            android:src="@drawable/avatarpost"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/avatar_user" />
+
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:textColor="#26282C"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dps8"
+            android:layout_marginEnd="@dimen/dps12"
+            android:text="@string/user_name"
+            app:layout_constraintEnd_toStartOf="@id/imgMore"
+            app:layout_constraintStart_toEndOf="@id/imgUserPost"
+            app:layout_constraintTop_toTopOf="@id/imgUserPost" />
+
+        <ImageView
+            android:id="@+id/imgMore"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/dps12"
+            android:src="@drawable/ic_more_hori"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvNameUser"
+            app:layout_constraintBottom_toBottomOf="@id/tvNameUser"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:textSize="@dimen/sps14"
+            android:id="@+id/tvCreatedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_ph_t_tr_c"
+            app:layout_constraintStart_toStartOf="@id/tvNameUser"
+            app:layout_constraintTop_toBottomOf="@id/tvNameUser"/>
+
+        <ImageView
+            android:id="@+id/imgDot"
+            android:layout_marginStart="@dimen/dps6"
+            android:layout_width="@dimen/dps10"
+            android:layout_height="@dimen/dps10"
+            app:layout_constraintStart_toEndOf="@id/tvCreatedTime"
+            app:layout_constraintTop_toTopOf="@id/tvCreatedTime"
+            app:layout_constraintBottom_toBottomOf="@id/tvCreatedTime"
+            android:src="@drawable/ic_dot_point"/>
+
+        <ImageView
+            android:layout_marginStart="@dimen/dps6"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/imgDot"
+            app:layout_constraintTop_toTopOf="@id/tvCreatedTime"
+            app:layout_constraintBottom_toBottomOf="@id/tvCreatedTime"
+            android:src="@drawable/ic_privacy"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:lineHeight="18dp"
+        android:paddingStart="@dimen/dps12"
+        android:paddingEnd="@dimen/dps12"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem"
+        android:textColor="#26282C"/>
+
+</LinearLayout>
