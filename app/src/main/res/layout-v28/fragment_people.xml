@@ -68,8 +68,7 @@
                 android:src="@drawable/ic_dot_point"
                 app:layout_constraintBottom_toBottomOf="@id/tvCreatedTime"
                 app:layout_constraintStart_toEndOf="@id/tvCreatedTime"
-                app:layout_constraintTop_toTopOf="@id/tvCreatedTime"
-                android:contentDescription="@string/todo" />
+                app:layout_constraintTop_toTopOf="@id/tvCreatedTime" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -78,8 +77,7 @@
                 android:src="@drawable/ic_privacy"
                 app:layout_constraintBottom_toBottomOf="@id/tvCreatedTime"
                 app:layout_constraintStart_toEndOf="@id/imgDot"
-                app:layout_constraintTop_toTopOf="@id/tvCreatedTime"
-                android:contentDescription="@string/todo" />
+                app:layout_constraintTop_toTopOf="@id/tvCreatedTime" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -88,6 +86,7 @@
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:lineHeight="@dimen/dps18"
             android:paddingStart="@dimen/dps12"
             android:paddingEnd="@dimen/dps12"
             android:text="@string/lorem"
@@ -107,8 +106,7 @@
                 android:layout_alignEnd="@id/view"
                 android:layout_alignBottom="@id/view"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:contentDescription="@string/todo" />
+                android:layout_alignParentTop="true" />
 
             <View
                 android:id="@+id/view"
