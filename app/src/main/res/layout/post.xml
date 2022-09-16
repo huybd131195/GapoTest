@@ -2,6 +2,7 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/postView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -446,8 +447,8 @@
                         android:textColor="#26282C" />
 
                     <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
+                        android:layout_width="7dp"
+                        android:layout_height="3dp"
                         android:layout_marginStart="@dimen/dps10"
                         android:contentDescription="@string/todo"
                         android:src="@drawable/like_cmt" />
@@ -557,9 +558,9 @@
                 app:layout_constraintTop_toBottomOf="@id/layoutReaction" />
 
             <LinearLayout
-                android:layout_marginEnd="@dimen/dps10"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/dps10"
                 android:background="@drawable/bg_edt"
                 android:orientation="horizontal"
                 android:weightSum="6"
@@ -574,32 +575,33 @@
                     android:layout_weight="4"
                     android:background="@drawable/bg_edt"
                     android:hint="@string/write_comment"
+                    android:importantForAutofill="no"
                     android:inputType="text"
                     android:paddingStart="@dimen/dps12"
-                    android:paddingEnd="@dimen/dps10"
-                    android:importantForAutofill="no" />
+                    android:paddingEnd="@dimen/dps10" />
 
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:src="@drawable/ic_camera"
-                    android:contentDescription="@string/todo" />
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_camera" />
 
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:src="@drawable/ic_face_smile"
-                    android:contentDescription="@string/todo" />
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_face_smile" />
 
 
             </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="8dp"
