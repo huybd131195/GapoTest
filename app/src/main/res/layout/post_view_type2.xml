@@ -90,84 +90,18 @@
             android:fontFamily="@font/sf_pro_text_regular"
             android:paddingStart="@dimen/dps12"
             android:paddingEnd="@dimen/dps12"
-            android:text="@string/lorem"
+            android:text="@string/lorem3"
             android:textColor="#26282C"
             android:textSize="@dimen/sps14" />
 
-        <RelativeLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dps12">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_alignEnd="@id/view"
-                android:layout_alignBottom="@id/view"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:contentDescription="@string/todo"
-                android:scaleType="fitXY"
-                android:src="@drawable/pic1" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="2dp"
-                android:layout_height="200dp"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_alignStart="@id/view"
-                android:layout_alignBottom="@id/view"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:contentDescription="@string/todo"
-                android:scaleType="fitXY"
-                android:src="@drawable/pic2" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/view"
-                android:background="@color/white" />
-        </RelativeLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:orientation="horizontal"
-            android:weightSum="3">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="@string/todo"
-                android:scaleType="fitXY"
-                android:src="@drawable/pic3" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_weight="1"
-                android:contentDescription="@string/todo"
-                android:scaleType="fitXY"
-                android:src="@drawable/pic4" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="@string/todo"
-                android:scaleType="fitXY"
-                android:src="@drawable/pic5" />
-        </LinearLayout>
+            android:layout_height="240dp"
+            android:layout_marginTop="@dimen/dps12"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pic7"
+            android:contentDescription="@string/todo" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -359,7 +293,7 @@
                 android:layout_height="40dp"
                 android:layout_margin="@dimen/dps12"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/avata_cmt"
+                android:src="@drawable/avatar_child2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -379,7 +313,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/sf_pro_text_bold"
-                    android:text="@string/ng_th_lan_ph_ng"
+                    android:text="@string/crazy_cat"
                     android:textColor="#26282C"
                     android:textSize="@dimen/sps16"
                     android:textStyle="bold" />
@@ -388,22 +322,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/sf_pro_text_regular"
-                    android:text="@string/tr_i_h_m_nay_nhi_u_m_y_c_c"
+                    android:text="@string/owo"
                     android:textColor="#26282C"
                     android:textSize="@dimen/sps16" />
 
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/ic_badge"
-                app:layout_constraintBottom_toTopOf="@id/layoutCmt"
-                app:layout_constraintEnd_toEndOf="@id/layoutCmt"
-                app:layout_constraintTop_toTopOf="@id/layoutCmt" />
 
             <LinearLayout
                 android:id="@+id/layoutReaction"
@@ -421,7 +346,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dps12"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -445,101 +371,6 @@
                         android:text="@string/answer"
                         android:textColor="#26282C" />
 
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:layout_marginStart="@dimen/dps10"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/like_cmt" />
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:layout_marginStart="@dimen/dps6"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/clap" />
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:layout_marginStart="@dimen/dps6"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/heart" />
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dps12"
-                    android:layout_marginTop="@dimen/dps10"
-                    android:fontFamily="@font/sf_pro_text_bold"
-                    android:text="@string/xem_2_b_nh_lu_n_tr_c"
-                    android:textColor="#737682" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dps12"
-                    android:layout_marginTop="@dimen/dps12"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/dps24"
-                        android:layout_height="@dimen/dps24"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/avatar_child" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:fontFamily="@font/sf_pro_text_bold"
-                        android:text="@string/name1"
-                        android:textColor="#26282C" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="25dp"
-                        android:layout_marginStart="8dp"
-                        android:fontFamily="@font/sf_pro_text_regular"
-                        android:gravity="center"
-                        android:text="@string/_cmt"
-                        android:textSize="@dimen/sps12" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dps12"
-                    android:layout_marginTop="@dimen/dps12"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="@dimen/dps24"
-                        android:layout_height="@dimen/dps24"
-                        android:contentDescription="@string/todo"
-                        android:src="@drawable/avatar_child1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:fontFamily="@font/sf_pro_text_bold"
-                        android:text="@string/name2"
-                        android:textColor="#26282C" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:fontFamily="@font/sf_pro_text_regular"
-                        android:gravity="center"
-                        android:text="@string/send_sticker"
-                        android:textSize="@dimen/sps12" />
-
                 </LinearLayout>
 
 
@@ -557,9 +388,9 @@
                 app:layout_constraintTop_toBottomOf="@id/layoutReaction" />
 
             <LinearLayout
-                android:layout_marginEnd="@dimen/dps10"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/dps10"
                 android:background="@drawable/bg_edt"
                 android:orientation="horizontal"
                 android:weightSum="6"
@@ -574,35 +405,36 @@
                     android:layout_weight="4"
                     android:background="@drawable/bg_edt"
                     android:hint="@string/write_comment"
+                    android:importantForAutofill="no"
                     android:inputType="text"
                     android:paddingStart="@dimen/dps12"
-                    android:paddingEnd="@dimen/dps10"
-                    android:importantForAutofill="no" />
+                    android:paddingEnd="@dimen/dps10" />
 
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:src="@drawable/ic_camera"
-                    android:contentDescription="@string/todo" />
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_camera" />
 
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/transparent"
-                    android:src="@drawable/ic_face_smile"
-                    android:contentDescription="@string/todo" />
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_face_smile" />
 
 
             </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="8dp"
+            android:layout_height="@dimen/dps8"
             android:background="@color/white" />
     </LinearLayout>
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,17 +19,20 @@
             android:layout_marginStart="@dimen/dps12"
             android:contentDescription="@string/logo_gapo"
             android:gravity="center_vertical"
-            android:src="@drawable/ic_gapo" />
+            android:src="@drawable/logo_app" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/dps10"
             android:layout_toEndOf="@id/imgLogo"
+            android:fontFamily="@font/sf_pro_text_semibold"
             android:gravity="center"
-            android:text="Gapo"
+            android:text="@string/name_logo"
+            android:textColor="#26282C"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="normal"
+            tools:ignore="RelativeOverlap" />
 
         <ImageView
             android:id="@+id/imgMenu"
@@ -74,25 +76,29 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/dps10">
+                android:padding="@dimen/dps10"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
-                    android:layout_width="@dimen/dps40"
+                    android:layout_width="40dp"
                     android:layout_height="@dimen/dps40"
+                    android:contentDescription="@string/todo"
                     android:src="@drawable/avatar" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dps10"
+                    android:fontFamily="@font/sf_pro_text_regular"
                     android:text="@string/what_do_you_want_to_share"
-                    android:textAllCaps="true"
+                    android:textColor="#737682"
                     android:textSize="@dimen/sps14" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
+                android:baselineAligned="false"
                 android:orientation="horizontal"
                 android:weightSum="3">
 
@@ -101,21 +107,24 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dps10"
+                        android:contentDescription="@string/todo"
                         android:src="@drawable/ic_livestream" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/dps10"
+                        android:layout_marginStart="@dimen/dps8"
+                        android:fontFamily="@font/sf_pro_text_regular"
                         android:text="@string/live_stream"
                         android:textColor="#26282C"
-                        android:textSize="14sp" />
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -123,18 +132,21 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dps10"
+                        android:contentDescription="@string/todo"
                         android:src="@drawable/ic_galery" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/dps10"
+                        android:layout_marginStart="@dimen/dps8"
+                        android:fontFamily="@font/sf_pro_text_semibold"
                         android:text="@string/nh_video"
                         android:textColor="#26282C"
                         android:textSize="14sp" />
@@ -145,18 +157,21 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dps10"
+                        android:contentDescription="@string/todo"
                         android:src="@drawable/ic_vote" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/dps10"
+                        android:fontFamily="@font/sf_pro_text_semibold"
                         android:text="@string/b_nh_ch_n"
                         android:textColor="#26282C"
                         android:textSize="14sp" />
@@ -167,56 +182,81 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="8dp"
-                android:background="#f5f5f5" />
+                android:background="#F1F2F4" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
+            <include layout="@layout/post" />
+
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="8dp"
+                android:background="#F1F2F4" />
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="#f1f2f4"-->
-<!--                android:gravity="center_horizontal"-->
-<!--                android:orientation="vertical">-->
+            <include layout="@layout/post_view_type" />
 
-<!--                <ImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="@dimen/dps22"-->
-<!--                    android:src="@drawable/ic_illustration" />-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Bạn đã xem hết"-->
-<!--                    android:textColor="#26282C"-->
-<!--                    android:textSize="18sp"-->
-<!--                    android:textStyle="bold" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f1f2f4"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="@dimen/dps22"-->
-<!--                    android:layout_marginEnd="@dimen/dps22"-->
-<!--                    android:gravity="center"-->
-<!--                    android:paddingStart="10dp"-->
-<!--                    android:paddingEnd="10dp"-->
-<!--                    android:text="Đó là tất cả bài viết của tổ chức bạn."-->
-<!--                    android:textSize="16sp" />-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/dps22"
+                    android:src="@drawable/illustration" />
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="@dimen/dps22"-->
-<!--                    android:layout_marginEnd="@dimen/dps22"-->
-<!--                    android:gravity="center"-->
-<!--                    android:paddingStart="10dp"-->
-<!--                    android:paddingEnd="10dp"-->
-<!--                    android:text="Làm mới lại để cập nhật bài viết mới"-->
-<!--                    android:textSize="16sp" />-->
-<!--            </LinearLayout>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_text_semibold"
+                    android:text="Bạn đã xem hết"
+                    android:textColor="#26282C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dps22"
+                    android:layout_marginTop="@dimen/dps8"
+                    android:layout_marginEnd="@dimen/dps22"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/tv1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dps22"
+                    android:layout_marginEnd="@dimen/dps22"
+                    android:fontFamily="@font/sf_pro_text_regular"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/tv2"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dps12"
+                    android:background="@drawable/bg_btn"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="@string/refresh_page"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+                "
+            </LinearLayout>
 
         </LinearLayout>
 

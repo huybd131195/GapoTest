@@ -10,4 +10,7 @@
     <dimen name="dps40">40dp</dimen>
     <dimen name="dps6">6dp</dimen>
     <dimen name="dps22">22dp</dimen>
+    <dimen name="dps16">16dp</dimen>
+    <dimen name="sps12">12sp</dimen>
+    <dimen name="dps24">24dp</dimen>
 </resources>

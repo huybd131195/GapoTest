@@ -16,15 +16,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
-        app:tabIconTint="@drawable/color_selected"
         android:id="@+id/tabLayout"
         android:layout_width="0dp"
-        app:tabIndicatorColor="#375464"
         android:layout_height="?actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:tabGravity="fill"
+        app:tabIconTint="@drawable/color_selected"
+        app:tabIndicatorColor="#375464"
         app:tabIndicatorGravity="top"
         app:tabMaxWidth="0dp"
         app:tabMode="fixed">
@@ -59,4 +59,5 @@
             android:layout_height="wrap_content"
             android:icon="@drawable/account" />
     </com.google.android.material.tabs.TabLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

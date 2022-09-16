@@ -11,7 +11,7 @@
 
     <color name="selected_color">#375464</color>
     <color name="unselected_color">#737682</color>
-
+    <color name="transparent">#00FFFFFF</color>
 
 
 </resources>
